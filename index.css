@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: #EFF2F7;
+    font-family: 'Lalezar', cursive;
 }
 html {
     scroll-behavior: smooth
@@ -22,7 +22,7 @@ html {
 #nav {
     display: flex;
     flex-direction: row;
-    justify-self: flex-end; 
+    justify-self: flex-end;
 }
 
 .push {
@@ -36,6 +36,7 @@ html {
 #nav a {
     display: block;
     padding: 1.5rem;
+    color: #E9EEF2;
 }
 #nav li:hover {
     background-color: #55D09B;
@@ -45,9 +46,10 @@ html {
     margin: auto 25px;
     font-family: 'Lalezar', cursive;
     font-size: 1.4rem;
+    color: #E9EEF2;
 }
 #logo-img {
-    width: 35px;
+    width: 45px;
     margin-left: 30px;
 }
 .overlay {
@@ -57,7 +59,62 @@ html {
     display: none;
 }
 #welcome-section {
+    padding-top: 78px;
     background-color: #E9EEF2;
     min-height: 100vh;
+}
+#profile1 {
+    height: 351px;
+    width: auto;
+    align-self: center;
+    z-index: 10;
+    box-shadow: 6px 6px 14px 0px rgba(0,0,0,0.73);
+}
+#section-container {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#icons-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#icons-container li {
+    list-style: none;
+}
+
+#intro-container {
+    align-self: center;
+}
+
+#intro-1 {
+    font-size: 3rem;
+    margin-left: 20px;
+}
+#intro-2 {
+    color: #4769D7;
+    font-size: 3.5rem;
+    margin-left: 20px;
+}
+#intro-3 {
+    margin-left: -425px;
+    background-color: #55D09B;
+    width: 1000px;
+    height: 80px;
+    border-radius: 15px;
+    z-index: 1;
+}
+#intro-4 {
+    position: relative;
+    top: -60px;
+    font-size: 1.7rem;
+    margin-left: 40px;
+}
+.icon-sizing {
+    height: 35px;
+    margin-left: 30px;
 }
 
