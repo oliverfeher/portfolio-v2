@@ -16,7 +16,7 @@ html {
     font-family: 'Lalezar', cursive;
     font-size: 1.2rem;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-    z-index: 5;
+    z-index: 11;
 }
 
 #nav {
@@ -70,7 +70,7 @@ html {
     height: 351px;
     width: auto;
     align-self: center;
-    z-index: 10;
+    z-index: 7;
     box-shadow: 6px 6px 14px 0px rgba(0,0,0,0.73);
 }
 #section-container {
@@ -87,6 +87,10 @@ html {
 
 #icons-container li {
     list-style: none;
+    transition: transform 0.2s ease-in 0s;
+}
+#icons-container li:hover {
+    transform: scale(1.1)
 }
 
 #intro-container {
@@ -127,9 +131,44 @@ html {
 
 
 #work-section {
-    min-height: 100vh;
+    min-height: 92vh;
     background-image: url("assets/work-background.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    
+}
+#work-container:first-child {
+    text-align: center;
+    font-size: 4rem;
+    color: #55D09B;
+    position: relative;
+    top: 45px;
+}
+
+#grid-container {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 35px;
+    grid-row-gap: 0px;
+    justify-items: center;
+}
+.grid-text {
+    font-size: 1rem;
+    color: #E9EEF2;
+    margin: 0px 30px 0px 30px;
+}
+#projects-button {
+    font-size: 1.5rem;
+    background-color: #55D09B;
+    color: white;
+    width: 160px;
+    border-radius: 20px;
+    margin: 70px auto 0px auto;
+    transition: background-color 0.2s ease-in 0s, transform 0.2s ease-in 0s;
+}
+#projects-button:hover {
+    background-color: #4769D7;
+    transform: translateY(3px);
+    cursor: pointer;
 }
