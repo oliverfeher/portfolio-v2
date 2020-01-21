@@ -8,6 +8,7 @@
 html {
     scroll-behavior: smooth
 }
+
 #nav-bar {
     display: flex;
     background-color: #4769D7;
@@ -59,7 +60,7 @@ html {
     display: none;
 }
 #welcome-section {
-    
+    width: 100%;
     background-color: #E9EEF2;
     min-height: 100vh;
     display: flex;
@@ -220,4 +221,13 @@ html {
 #about-desc {
     width: 648px;
     margin: auto;
+}
+
+.blue-highlight {
+    color: #4769D7;
+}
+
+#contact-section {
+    min-height: 100vh;
+    background-color: #303030;
 }
