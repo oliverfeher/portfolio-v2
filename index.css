@@ -6,7 +6,7 @@
     font-family: 'Lalezar', cursive;
 }
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 #nav-bar {
@@ -50,7 +50,7 @@ html {
     color: #E9EEF2;
 }
 #logo-img {
-    width: 45px;
+    width: 2.3em;
     margin-left: 30px;
 }
 .overlay {
@@ -68,8 +68,9 @@ html {
     justify-content: center;
 }
 #profile1 {
-    height: 351px;
-    width: auto;
+    width: 100%;
+    max-width: 20em;
+    height: auto;
     align-self: center;
     z-index: 7;
     box-shadow: 6px 6px 14px 0px rgba(0,0,0,0.73);
@@ -100,30 +101,30 @@ html {
 
 #intro-1 {
     font-size: 3rem;
-    margin-left: 20px;
+    margin-left: .3em;
 }
 #intro-2 {
     color: #4769D7;
     font-size: 3.5rem;
-    margin-left: 20px;
+    margin-left: .25em;
 }
 #intro-3 {
-    margin-left: -425px;
+    margin-left: -25em;
     background-color: #55D09B;
-    width: 1000px;
-    height: 80px;
-    border-radius: 15px;
+    width: 300%;
+    height: 5em;
+    border-radius: 1em;
     z-index: 1;
 }
 #intro-4 {
     position: relative;
-    top: -60px;
+    top: -2.2em;
     font-size: 1.7rem;
-    margin-left: 40px;
+    margin-left: 1.5em;
 }
 .icon-sizing {
-    height: 35px;
-    margin-left: 30px;
+    height: 2.2em;
+    margin-left: 2em;
 }
 #index-bottom {
     width: 100%;
@@ -142,30 +143,30 @@ html {
     font-size: 4rem;
     color: #55D09B;
     position: relative;
-    top: 85px;
+    top: 1.2em;
 }
 
 #grid-container {
-    margin-top: 80px;
+    margin-top: 1.2em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 35px;
+    grid-column-gap: 1.5em;
     grid-row-gap: 0px;
     justify-items: center;
 }
 .grid-text {
     font-size: 1rem;
     color: #E9EEF2;
-    margin: 0px 30px 0px 30px;
+    margin: 0px 2em 0px 2em;
 }
 #projects-button {
     font-size: 1.5rem;
     background-color: #55D09B;
     color: white;
-    width: 160px;
-    border-radius: 20px;
-    margin: 70px auto 0px auto;
+    width: 6.5em;
+    border-radius: 1em;
+    margin: 2em auto 0 auto;
     transition: background-color 0.2s ease-in 0s, transform 0.2s ease-in 0s;
 }
 #projects-button:hover {
@@ -176,6 +177,7 @@ html {
 
 #about-section {
     min-height: 100vh;
+    background-color: #E9EEF2;
 }
 
 #intro-container {
@@ -204,8 +206,9 @@ html {
 #profile2 {
     position: relative;
     top: 40px;
-    height: 500px;
-    width: auto;
+    width: 100%;
+    max-width: 20em;
+    height: auto;
     align-self: center;
     z-index: 7;
     box-shadow: 6px 6px 14px 0px rgba(0,0,0,0.73);
@@ -230,4 +233,20 @@ html {
 #contact-section {
     min-height: 100vh;
     background-color: #303030;
+}
+
+@media only screen and (max-width: 1300px) {
+    #grid-container {
+        grid-column-gap: .1em;
+    }
+    #intro-3 {
+        width: 250%;
+    }
+    #about-2 {
+        width: 50em;
+    }
+    #profile2 {
+        max-width: 15em;
+        top: 10px;
+    }
 }
